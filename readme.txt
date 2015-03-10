@@ -11,7 +11,6 @@ Stable tag: 1.0.0
 Connect your ClickFunnels pages to your Wordpress blog. Create custom pages, set as homepage or 404 page with easy setup.
 
 == Description ==
-
 Connect to your ClickFunnels account to show your funnel pages within your blog without any coding. Create clean URLs to your pages with ease and much more.
 
 First, you install the plugin in your Wordpress dashboard. (check Installation for more info) and connect to ClickFunnels using the *Authentication Key* provided for you. 
@@ -37,21 +36,17 @@ Example: "http://yourblog.com/ordernow" can be connected to your order page from
 
 
 == Installation ==
-
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
 == Frequently Asked Questions ==
-
 **Does this require a ClickFunnels.com account?**
 
 Yes.
 
 == Screenshots ==
-
 1. How to get your API key from Clickfunnels
 
 2. Creating new pages within ClickFunnels plugin
 
 == Changelog ==
-
 Launching ClickFunnels plugin.
