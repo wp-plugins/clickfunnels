@@ -20,16 +20,19 @@ You can now connect unlimited pages using custom URLs to truly get the most out 
 
 = What You Can Do: =
 
+
 * Create custom URLs for your pages
-* Set as Home Page
-* Set as 404 Page
-* Edit / Manage from Within Plugin
+* Set any page as homepage
+* Set any page as 404 page
+* Edit / Manage your pages
 
 Want to show an order page of one of your Webinar funnels? Easy, just select the funnel and choose the order page and create a custom URL. Example: "http://yourblog.com/ordernow"
 
 **Don't have a ClickFunnels account?** You can sign up now to transform the way you run your business online. The Wordpress plugin is free to all members.
 
-**Need more help?** Check out the installation, FAQ and screenshots for more information or [check out the Support Desk.](https://support.clickfunnels.com/support/home “Support Desk for ClickFunnels”)
+**Need more help?** Check out the installation, FAQ and screenshots for more information or check out the Support Desk.
+
+<https://support.clickfunnels.com/>
 
 
 == Installation ==
