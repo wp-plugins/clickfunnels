@@ -6,8 +6,7 @@ Requires at least: 4.1
 Tested up to: 4.1
 Stable tag: 1.0.0
 
-Connect your ClickFunnels pages to your Wordpress blog. Choose any of your pages to show using a custom URL or set as home page or 404 error page with easy setup.
-
+Connect your ClickFunnels pages to your Wordpress blog. Create custom URLs or set as homepage / 404 page with easy setup.
 == Description ==
 
 Connect your ClickFunnels pages to your Wordpress blog. Choose from any page within all your funnels. Easy setup with ClickFunnels API.
