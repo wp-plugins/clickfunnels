@@ -71,14 +71,6 @@ To set a page to show as the home page just select any of your ClickFunnels page
 
 **Yes.** A clickfunnels account is required to use this plugin. If you are not already a member you can sign up for your account and transform the way you run your online business.
 
-
-== Screenshots ==
-1. Get Your Authentication Key
-2. Connect Plugin to ClickFunnels
-3. Add and Edit Your Pages
-4. Manage All Your Pages
-5. Set as Home Page or 404 Page
-
 == Changelog ==
 = Version: 1.0.0 =
 
@@ -97,5 +89,12 @@ The power is in your hands with the **Editor** allows you to design and change y
 
 *Complete with hosting and free Wordpress plugin.*
 
-**Sign up for your ClickFunnels Account Now**
+**Sign up for ClickFunnels Now:**
 <https://clickfunnels.com/>
+
+== Screenshots ==
+1. Get Your Authentication Key
+2. Connect Plugin to ClickFunnels
+3. Add and Edit Your Pages
+4. Manage All Your Pages
+5. Set as Home Page or 404 Page
