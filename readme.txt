@@ -86,6 +86,10 @@ To set a page to show as the home page just select any of your ClickFunnels page
 
 Stay current with the latest version of the plugin:
 
+= Version: 1.0.1 =
+
+* Meta UTF-8
+
 = Version: 1.0.0 =
 
 * Launch Plugin to Repository
