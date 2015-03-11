@@ -80,8 +80,7 @@ To set a page to show as the home page just select any of your ClickFunnels page
 5. Set as Home Page or 404 Page
 
 == Changelog ==
-
-=Version: 1.0.0 =
+= Version: 1.0.0 =
 
 * Launch Plugin to Repository
 * Added Support FAQ Tab
@@ -90,7 +89,6 @@ To set a page to show as the home page just select any of your ClickFunnels page
 * Edit Funnel / Launch Editor
 
 == Other Notes ==
-
 = New to ClickFunnels? =
 
 ClickFunnels.com is the premier service for building complete funnels for any marketing campaign. High converting email optin funnels or complex membership funnels.
@@ -100,5 +98,4 @@ The power is in your hands with the **Editor** allows you to design and change y
 *Complete with hosting and free Wordpress plugin.*
 
 **Sign up for your ClickFunnels Account Now**
-
 <https://clickfunnels.com/>
