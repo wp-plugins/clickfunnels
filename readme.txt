@@ -60,21 +60,20 @@ Yes.
 
 == Screenshots ==
 1. Get Your Authentication Key
-
 2. Connect Plugin to ClickFunnels
-
-3. Add New Page
-
-4. Edit Page Settings
-
-4. Set as Home Page
-
-5. Set as 404 Page
-
-6. Manage Pages
-
-
-
+3. Add and Edit Your Pages
+4. Set as Home Page or 404 Page
+6. Manage All Your Pages
 
 == Changelog ==
+Launching ClickFunnels plugin.
+
+== Other Notes ==
+Launching ClickFunnels plugin.
+
+== Usage ==
+Launching ClickFunnels plugin.
+
+
+== Sign Up ==
 Launching ClickFunnels plugin.
