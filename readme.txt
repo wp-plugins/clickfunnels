@@ -36,7 +36,28 @@ Example: "http://yourblog.com/ordernow" can be connected to your order page from
 
 
 == Installation ==
-Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+
+**Easy Installation**
+
+In your Wordpress dashboard go to Plugins > Add New and search for "clickfunnels" and you will be able to quickly install the latest version of the plugin.
+
+Updates will be ready automatically and you will be notified in your dashboard.
+
+**Manual Installation**
+
+Download the ClickFunnels Wordpress plugin .zip file.
+
+Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation via a FTP and then activate the Plugin from Plugins page.
+
+**Setup Authenication Key**
+
+Login to your ClickFunnels account and go to your Settings to get the authentication key, which is unique to your account. 
+
+You will also need the email address you signed up with. From there you can use the email and key to connect the plugin to your account.
+
+See more in Screenshots or visit the Support Desk.
+
+<https://support.clickfunnels.com/>
 
 == Frequently Asked Questions ==
 **Does this require a ClickFunnels.com account?**
