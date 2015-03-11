@@ -55,9 +55,21 @@ See more in Screenshots or visit the Support Desk.
 
 == Frequently Asked Questions ==
 
-= Q: How and where do I get Authentication Key? =
+= Where do I get Authentication Key? =
 
 To access your Authentication Token go to your ClickFunnels Members area and choose My Account > Settings and you will find your unique authenication key.
+
+= What is a Custom URL? =
+
+A custom URL is the web address that will point to your ClickFunnels page. For example, "www.mydomain.com/signup" could point to any of your ClickFunnels pages such as an opt-in page.
+
+= How do I Set Homepage or 404 Page? =
+
+To set a page to show as the home page just select any of your ClickFunnels pages (within the plugin) and select "Home Page" and hit save. You can only have one page set to Home page or 404 page at a time.
+
+= Do I Need a ClickFunnels Account? =
+
+**Yes.** A clickfunnels account is required to use this plugin. If you are not already a member you can sign up for your account and transform the way you run your online business.
 
 
 == Screenshots ==
@@ -69,7 +81,7 @@ To access your Authentication Token go to your ClickFunnels Members area and cho
 
 == Changelog ==
 
-**Version: 1.0.0**
+=Version: 1.0.0 =
 
 * Launch Plugin to Repository
 * Added Support FAQ Tab
@@ -78,6 +90,8 @@ To access your Authentication Token go to your ClickFunnels Members area and cho
 * Edit Funnel / Launch Editor
 
 == Other Notes ==
+
+= New to ClickFunnels? =
 
 ClickFunnels.com is the premier service for building complete funnels for any marketing campaign. High converting email optin funnels or complex membership funnels.
 
