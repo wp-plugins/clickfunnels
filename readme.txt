@@ -59,9 +59,22 @@ See more in Screenshots or visit the Support Desk.
 Yes.
 
 == Screenshots ==
-1. How to get your API key from Clickfunnels
+1. Get Your Authentication Key
 
-2. Creating new pages within ClickFunnels plugin
+2. Connect Plugin to ClickFunnels
+
+3. Add New Page
+
+4. Edit Page Settings
+
+4. Set as Home Page
+
+5. Set as 404 Page
+
+6. Manage Pages
+
+
+
 
 == Changelog ==
 Launching ClickFunnels plugin.
