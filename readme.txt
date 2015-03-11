@@ -55,7 +55,7 @@ See more in Screenshots or visit the Support Desk.
 
 == Frequently Asked Questions ==
 
-=Q: How and where do I get Authentication Key?=
+= Q: How and where do I get Authentication Key? =
 
 To access your Authentication Token go to your ClickFunnels Members area and choose My Account > Settings and you will find your unique authenication key.
 
@@ -68,14 +68,23 @@ To access your Authentication Token go to your ClickFunnels Members area and cho
 5. Set as Home Page or 404 Page
 
 == Changelog ==
-Launching ClickFunnels plugin.
+
+**Version: 1.0.0**
+
+* Launch Plugin to Repository
+* Added Support FAQ Tab
+* API Connection
+* Set as Home / 404 Page
+* Edit Funnel / Launch Editor
 
 == Other Notes ==
-Launching ClickFunnels plugin.
 
-== Usage ==
-Launching ClickFunnels plugin.
+ClickFunnels.com is the premier service for building complete funnels for any marketing campaign. High converting email optin funnels or complex membership funnels.
 
+The power is in your hands with the **Editor** allows you to design and change your pages in your web browser. Choose from a huge array of templates and edit on the fly.
 
-== Sign Up ==
-Launching ClickFunnels plugin.
+*Complete with hosting and free Wordpress plugin.*
+
+**Sign up for your ClickFunnels Account Now**
+
+<https://clickfunnels.com/>
