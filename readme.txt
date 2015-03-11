@@ -34,6 +34,15 @@ Example: "http://yourblog.com/ordernow" can be connected to your order page from
 
 <https://support.clickfunnels.com/>
 
+ClickFunnels.com is the premier service for building complete funnels for any marketing campaign. High converting email optin funnels or complex membership funnels.
+
+The power is in your hands with the **Editor** allows you to design and change your pages in your web browser. Choose from a huge array of templates and edit on the fly.
+
+*Complete with hosting and free Wordpress plugin.*
+
+**Sign up for ClickFunnels Now:**
+<https://clickfunnels.com/>
+
 
 == Installation ==
 
@@ -85,16 +94,6 @@ Stay current with the latest version of the plugin:
 * Set as Home / 404 Page
 * Edit Funnel / Launch Editor
 
-== Other Notes ==
-
-ClickFunnels.com is the premier service for building complete funnels for any marketing campaign. High converting email optin funnels or complex membership funnels.
-
-The power is in your hands with the **Editor** allows you to design and change your pages in your web browser. Choose from a huge array of templates and edit on the fly.
-
-*Complete with hosting and free Wordpress plugin.*
-
-**Sign up for ClickFunnels Now:**
-<https://clickfunnels.com/>
 
 == Screenshots ==
 1. Get Your Authentication Key
