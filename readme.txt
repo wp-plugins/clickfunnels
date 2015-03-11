@@ -54,16 +54,18 @@ See more in Screenshots or visit the Support Desk.
 <https://support.clickfunnels.com/>
 
 == Frequently Asked Questions ==
-**Does this require a ClickFunnels.com account?**
 
-Yes.
+=Q: How and where do I get Authentication Key?=
+
+To access your Authentication Token go to your ClickFunnels Members area and choose My Account > Settings and you will find your unique authenication key.
+
 
 == Screenshots ==
 1. Get Your Authentication Key
 2. Connect Plugin to ClickFunnels
 3. Add and Edit Your Pages
-4. Set as Home Page or 404 Page
-6. Manage All Your Pages
+4. Manage All Your Pages
+5. Set as Home Page or 404 Page
 
 == Changelog ==
 Launching ClickFunnels plugin.
