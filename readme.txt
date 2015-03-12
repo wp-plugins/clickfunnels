@@ -6,7 +6,7 @@ Author URI: https://profiles.wordpress.org/clickfunnelscom
 Tags: landing pages, clickfunnels, funnels, sales funnel, optin, internet marketing
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Connect your ClickFunnels pages to your Wordpress blog. Create custom pages, set as homepage or 404 page with easy setup.
 
@@ -85,6 +85,16 @@ To set a page to show as the home page just select any of your ClickFunnels page
 == Changelog ==
 
 Stay current with the latest version of the plugin:
+
+= Coming Soon: =
+
+* Special Character Fix
+
+= Version: 1.0.2 =
+
+* Ping Page to Fix "Blank Pages"
+* Excluded Special Pages (OTO/Order)
+* Notification for Empty Funnels
 
 = Version: 1.0.1 =
 

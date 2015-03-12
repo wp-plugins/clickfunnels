@@ -3,7 +3,7 @@
     * Plugin Name: ClickFunnels
     * Plugin URI: http://clickfunnels.com
     * Description: Connect your ClickFunnel pages to your blog. Create new pages, connect to homepage or 404 pages.
-    * Version: 1.0.0
+    * Version: 1.0.2
     * Author: Etison, LLC
     * Author URI: http://clickfunnels.com
 */
@@ -22,7 +22,7 @@ class ClickFunnels {
         add_filter( 'manage_edit-clickfunnels_columns', array( $this, 'add_columns' ) );
         add_action( 'save_post', array( $this, 'save_meta' ), 10, 2 );
         add_action( 'manage_posts_custom_column', array( $this, 'fill_columns' ) );
-        add_action( "template_redirect", array( $this, "do_redirects" ), 10, 2 );
+        add_action( "template_include", array( $this, "do_redirects" ), 10, 2 );
         add_action( 'trashed_post', array( $this, 'post_trash' ), 10 );
         add_filter( 'post_updated_messages', array( $this, 'updated_message' ) );
         // check permalinks
@@ -57,6 +57,7 @@ class ClickFunnels {
     }
     public function do_redirects() {
         global $page;
+        header('Content-Type: text/html; charset=utf-8');
         $current = ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         // remove parameters
         $current = explode( "?", $current );
@@ -69,6 +70,7 @@ class ClickFunnels {
             $thepage = explode( "{#}", $cf_options["pages"][$slug] );
             // echo $thepage[0] . "<br/> position:"; // funnel ID
             // echo $thepage[1]; // page position
+
             echo $this->get_page_html( $thepage[0], $thepage[1], $thepage[4] );
             exit();
         } else if ( is_404() ) {

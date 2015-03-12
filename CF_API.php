@@ -21,6 +21,8 @@ class CF_API {
         $newHTML = '<!DOCTYPE html>
 <html>
 <head>
+     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
     <!-- Powered by ClickFunnels.com -->
     <script>
         function getParameterByName(name) {
@@ -43,7 +45,7 @@ class CF_API {
     <script type="text/javascript" src="https://static.clickfunnels.com/clickfunnels/landers/tmp/'.$position.'.js"></script>
     '.urldecode( $meta ).'
     <style>#IntercomDefaultWidget{display:none;}#Intercom{display:none;}</style>
-    <meta name="nodo-proxy" content="html"/>
+    <meta name="nodo-proxy" content="html">
 </head>
 <body>
 </body>
