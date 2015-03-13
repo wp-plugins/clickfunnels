@@ -22,7 +22,7 @@ class ClickFunnels {
         add_filter( 'manage_edit-clickfunnels_columns', array( $this, 'add_columns' ) );
         add_action( 'save_post', array( $this, 'save_meta' ), 10, 2 );
         add_action( 'manage_posts_custom_column', array( $this, 'fill_columns' ) );
-        add_action( "template_include", array( $this, "do_redirects" ), 10, 2 );
+        add_action( "template_redirect", array( $this, "do_redirects" ), 10, 2 );
         add_action( 'trashed_post', array( $this, 'post_trash' ), 10 );
         add_filter( 'post_updated_messages', array( $this, 'updated_message' ) );
         // check permalinks
