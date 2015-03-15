@@ -82,17 +82,22 @@ To set a page to show as the home page just select any of your ClickFunnels page
 
 **Yes.** A clickfunnels account is required to use this plugin. If you are not already a member you can sign up for your account and transform the way you run your online business.
 
+= Special Characters Displaying Incorrectly? =
+
+The error for displaying special characters incorrectly has been fixed for all newly created pages.
+
+For older pages you will need to open the page in the editor and hit save. Or you can re-select your page in the WordPress plugin. Screenshot here: http://cl.ly/0n2H0v220e1U
+
+By re-selecting the page it will ping the server which should refresh your page.
+
 == Changelog ==
 
 Stay current with the latest version of the plugin:
 
-= Coming Soon: =
-
-* Special Character Fix
-
 = Version: 1.0.3 =
 
 * Fix Blank Homepage (caused by template_include)
+* Special Character Fix (see FAQ)
 
 = Version: 1.0.2 =
 
