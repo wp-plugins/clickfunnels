@@ -5,7 +5,7 @@ Plugin URI: http://clickfunnels.com/
 Author URI: https://profiles.wordpress.org/clickfunnelscom
 Tags: landing pages, clickfunnels, funnels, sales funnel, optin, internet marketing
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.0.4
 
 Connect your ClickFunnels pages to your Wordpress blog. Create custom pages, set as homepage or 404 page with easy setup.
