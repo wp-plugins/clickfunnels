@@ -175,6 +175,7 @@
 				update_option( 'clickfunnels_api_email', $_POST['clickfunnels_api_email'] );
 				update_option( 'clickfunnels_api_auth', $_POST['clickfunnels_api_auth'] );
 				update_option( 'clickfunnels_siteURL', $_POST['clickfunnels_siteURL'] );
+				update_option( 'clickfunnels_404Redirect', $_POST['clickfunnels_404Redirect'] );
 			}
 		}
 	?>
@@ -188,6 +189,7 @@
 	        <input type="text" name="clickfunnels_api_auth" id="clickfunnels_api_auth" placeholder="C5c86J28WbxuxxUqN59z5D" value="<?php echo get_option( 'clickfunnels_api_auth' ); ?>" />
 	        <h3>Website URL:   <span class="checkSuccess"><i class="fa fa-check successGreen"></i></span></h3>
 	        <input type="text" name="clickfunnels_siteURL" id="clickfunnels_siteURL" placeholder="http://yourdomain.com/" value="<?php if (get_option( 'clickfunnels_siteURL' ) != '') { echo get_option( 'clickfunnels_siteURL' ); } else { echo get_site_url(); } ?>" />
+	        <!-- <h3><input type="checkbox" value="yesRedirect" <?php if (get_option( 'clickfunnels_404Redirect' ) != '') { echo 'checked'; } ?> name="clickfunnels_404Redirect" style="width: auto;float: left;margin-top:-2px;margin-right: 8px;" /> 404 Redirect to Homepage (LinkSaver)</h3> -->
         </div>
         <div class="rightSide">
         	<p>To access your Authentication Token go to your ClickFunnels Members area and choose <a href="https://app.clickfunnels.com/users/edit" target="_blank">My Account > Settings</a> and you will find your API information.</p>
@@ -206,19 +208,9 @@
 		</div>
     </form>
     <?php include('footer.php'); ?>
+   
 </div>
+ <br clear="all">
+    <span style="font-size: 11px; padding-left: 10px;"><a href="#" id="showDataTesting" style="text-decoration: none; color: #999"><i class="fa fa-dashboard"></i> Show Plugin Developer Data</a></span>
+<?php include('admin_testing.php'); ?>
 
-<script>
-	(function($) {
-		setTimeout(function() {
-			$('#errorMessage').fadeOut();
-		}, 1500);
-		var specificFunnel = 'https://api.clickfunnels.com/funnels.json?email=<?php echo get_option( "clickfunnels_api_email" ); ?>&auth_token=<?php echo get_option( "clickfunnels_api_auth" ); ?>';
-		$.getJSON(specificFunnel, function(data) {
-		   $('.checkSuccess').html('<i class="fa fa-check successGreen"></i>');
-		  }).fail(function(jqXHR) {
-	     		$('.checkSuccess').html('<i class="fa fa-times errorRed"></i>');
-	     		$('.badAPI').show();
-		  });
-	})(jQuery);
-</script>

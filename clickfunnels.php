@@ -3,7 +3,7 @@
     * Plugin Name: ClickFunnels
     * Plugin URI: http://clickfunnels.com
     * Description: Connect your ClickFunnel pages to your blog. Create new pages, connect to homepage or 404 pages.
-    * Version: 1.0.3
+    * Version: 1.0.4
     * Author: Etison, LLC
     * Author URI: http://clickfunnels.com
 */
@@ -79,6 +79,9 @@ class ClickFunnels {
                     $thepage = explode( "{#}", $page['page_id'] );
                     echo $this->get_page_html( $thepage[0], $thepage[1], $thepage[4] );
                     exit();
+                }
+                 else if (get_option( 'clickfunnels_404Redirect' ) == 'yesRedirect') {
+                    wp_redirect( get_bloginfo( 'siteurl' ) , 301 );
                 }
             }
         else if ( is_home() ) {
@@ -416,3 +419,22 @@ function clickfunnels_loadjquery($hook) {
 add_action('admin_enqueue_scripts', 'clickfunnels_loadjquery');
 $api = new CF_API();
 $click = new ClickFunnels( $api );
+
+function cf_get_file_contents ($url) {
+    if (function_exists('curl_exec')){ 
+        $conn = curl_init($url);
+        curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, true);
+        curl_setopt($conn, CURLOPT_FRESH_CONNECT,  true);
+        curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
+        $url_get_contents_data = (curl_exec($conn));
+        curl_close($conn);
+    }elseif(function_exists('file_get_contents')){
+        $url_get_contents_data = file_get_contents($url);
+    }elseif(function_exists('fopen') && function_exists('stream_get_contents')){
+        $handle = fopen ($url, "r");
+        $url_get_contents_data = stream_get_contents($handle);
+    }else{
+        $url_get_contents_data = false;
+    }
+return $url_get_contents_data;
+} 

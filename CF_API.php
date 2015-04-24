@@ -12,7 +12,7 @@ class CF_API {
         if ( get_option( 'clickfunnels_api_email' ) == "" || get_option( 'clickfunnels_api_auth' ) == "" ) {
         } else {
             $new_url = $url.$query;
-            $content = file_get_contents( $new_url );
+            $content = cf_get_file_contents( $new_url );
             $funnels = json_decode( $content );
         }
         return $funnels;
