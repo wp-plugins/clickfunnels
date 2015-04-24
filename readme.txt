@@ -94,6 +94,11 @@ By re-selecting the page it will ping the server which should refresh your page.
 
 Stay current with the latest version of the plugin:
 
+= Version: 1.0.4 =
+
+* Added CURL as a backup to flie_get_contents
+* Added developer testing for easier error reporting
+
 = Version: 1.0.3 =
 
 * Fix Blank Homepage (caused by template_include)
