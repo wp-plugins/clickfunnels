@@ -1,5 +1,5 @@
 <div class="copyrightInfo">
-    <p><strong style="float: right;margin-right: 20px;font-weight: 200">  -- Running version 1.0.4</strong> Copyright 2015+ &copy; Eitson, LLC</p>
+    <p><strong style="float: right;margin-right: 20px;font-weight: 200">Running version 1.0.5</strong> Copyright 2015+ &copy; Eitson, LLC</p>
 </div>
 <style>
 	.copyrightInfo {
