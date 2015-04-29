@@ -3,7 +3,7 @@
     * Plugin Name: ClickFunnels
     * Plugin URI: http://clickfunnels.com
     * Description: Connect your ClickFunnel pages to your blog. Create new pages, connect to homepage or 404 pages.
-    * Version: 1.0.5
+    * Version: 1.0.6
     * Author: Etison, LLC
     * Author URI: http://clickfunnels.com
 */

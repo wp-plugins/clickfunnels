@@ -18,6 +18,11 @@ class CF_API {
         return $funnels;
     }
     public function get_page_html( $funnel_id, $position = 0, $meta = "" ) {
+        global $wp_query;
+        if ($wp_query->is_404) {
+            $wp_query->is_404 = false;
+        }
+        header("HTTP/1.1 200 OK");
         $newHTML = '<!DOCTYPE html>
 <html>
 <head>
