@@ -97,6 +97,7 @@ class ClickFunnels {
         $id = get_the_ID();
         $cf_type = get_post_meta( $id, 'cf_type', true );
         $cf_slug= get_post_meta( $id, 'cf_slug', true );
+        $cf_thepage= get_post_meta( $id, 'cf_thepage', true );
         $cf_thefunnel= get_post_meta( $id, 'cf_thefunnel', true );
         if ( $cf_type =="hp" && !$this->is_home( $id ) ) {
             $cf_type = "notype";
@@ -113,6 +114,15 @@ class ClickFunnels {
                 echo '<strong><a href="' . $url .'">' .  $this->get_funnel_name( $funnel_id ) . '</a></strong>' ;
             }
         }
+        if ( 'cf_thepage' == $column ) {
+            $pagename = explode("{#}", $cf_thepage);
+            echo $pagename[5];
+        }
+        if ( 'cf_openinEditor' == $column ) {
+            $pagename = explode("{#}", $cf_thepage);
+            echo "<a href='https://www.clickfunnels.com/pages/$pagename[1]' target='_blank'>Edit</a>";
+        }
+        
         switch ( $cf_type ) {
         case "p":
             $post_type = "Page";
@@ -135,7 +145,7 @@ class ClickFunnels {
         }
         if ( 'cf_path' == $column ) {
             if ( !empty( $url ) ) {
-                echo " <a href='$url' target='_blank'>$url</a>";
+                echo " <a href='$url' target='_blank'>View Page</a>";
             }
         }
     }
@@ -266,8 +276,11 @@ class ClickFunnels {
         $new_columns = array();
         $new_columns['cb'] = $columns['cb'];
         $new_columns['cf_post_name'] = "Funnel";
+        $new_columns['cf_thepage'] = "Page";
+        
+        $new_columns['cf_path'] = 'View';
+        $new_columns['cf_openinEditor'] = 'Editor';
         $new_columns['cf_type'] = 'Type';
-        $new_columns['cf_path'] = 'URL';
         $new_columns['date'] = $columns['date'];
         return $new_columns;
     }
@@ -408,15 +421,17 @@ class ClickFunnels {
     }
 }
 add_action( 'admin_menu', 'cf_plugin_submenu' );
-add_action( 'views_edit-clickfunnels', 'remove_edit_post_views' );
-function remove_edit_post_views( $views ) {
-         if( get_post_type() === 'movie' )  {
-            unset($views['all']);
-            unset($views['publish']);
-            unset($views['trash']);
+ function wpc_add_admin_cpt_script( $hook ) {
+
+    global $post;
+
+    if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
+        if ( 'clickfunnels' === $post->post_type ) {     
+            wp_enqueue_script(  'myscript', get_stylesheet_directory_uri().'/js/hidedraft.js' );
         }
-        unset($views);
+    }
 }
+add_action( 'admin_enqueue_scripts', 'wpc_add_admin_cpt_script', 10, 1 );
 function cf_plugin_submenu() {
     add_submenu_page( 'edit.php?post_type=clickfunnels', __( 'Settings', 'menu-test' ), __( 'Settings', 'menu-test' ), 'manage_options', 'cf_api', 'cf_api_settings_page' );
     add_submenu_page( 'edit.php?post_type=clickfunnels', __( 'How to Use ClickFunnels Plugin', 'menu-test' ), __( 'Support', 'menu-test' ), 'manage_options', 'clickfunnels_support', 'support_clickfunnels' );

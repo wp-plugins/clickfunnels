@@ -1,4 +1,5 @@
 jQuery(document).ready(function(){
+    jQuery('.draft').hide();
     jQuery("#cf_type").val(jQuery(".btn.active").data("value"));
     jQuery(".cf_header .btn").click(function(){
         jQuery(".cf_header .btn").removeClass().addClass('btn');
