@@ -195,7 +195,7 @@
         	<p>To access your Authentication Token go to your ClickFunnels Members area and choose <a href="https://app.clickfunnels.com/users/edit" target="_blank">My Account > Settings</a> and you will find your API information.</p>
 
         	<br><br><hr><br><br>
-        	<p>Change the website URL only if you have wordpress installed in a sub directory.</p>
+        	<p>Change the website URL only if you have WordPress installed in a sub directory.</p>
         </div>
         <br clear="both">
        </div>

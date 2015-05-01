@@ -188,7 +188,7 @@
 	</div>
 	<div id="apiSettings">
         <h2 style="margin-top: 10px"><strong>Frequently Asked Questions</strong></h2>
-        <p style="opacity: .7">Quickly find out about all the features to get the most out of using Wordpress to show your ClickFunnels pages. You can also go to the <a href="https://support.clickfunnels.com/support/home" target="_blank">knowledge base</a> to learn more about ClickFunnels.</p>
+        <p style="opacity: .7">Quickly find out about all the features to get the most out of using WordPress to show your ClickFunnels pages. You can also go to the <a href="https://support.clickfunnels.com/support/home" target="_blank">knowledge base</a> to learn more about ClickFunnels.</p>
         <hr style="border: none; border-bottom: 1px solid #ECEEEF; margin: 20px 0">	
         <div id="faq">
         	<h4><i class="fa fa-question-circle"></i> How and where do I get Authentication Key?</h4>

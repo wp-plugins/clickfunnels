@@ -3,7 +3,7 @@
     * Plugin Name: ClickFunnels
     * Plugin URI: http://clickfunnels.com
     * Description: Connect your ClickFunnel pages to your blog. Create new pages, connect to homepage or 404 pages.
-    * Version: 1.0.6
+    * Version: 1.0.7
     * Author: Etison, LLC
     * Author URI: http://clickfunnels.com
 */
@@ -97,6 +97,7 @@ class ClickFunnels {
         $id = get_the_ID();
         $cf_type = get_post_meta( $id, 'cf_type', true );
         $cf_slug= get_post_meta( $id, 'cf_slug', true );
+        $cf_thepage= get_post_meta( $id, 'cf_thepage', true );
         $cf_thefunnel= get_post_meta( $id, 'cf_thefunnel', true );
         if ( $cf_type =="hp" && !$this->is_home( $id ) ) {
             $cf_type = "notype";
@@ -113,6 +114,15 @@ class ClickFunnels {
                 echo '<strong><a href="' . $url .'">' .  $this->get_funnel_name( $funnel_id ) . '</a></strong>' ;
             }
         }
+        if ( 'cf_thepage' == $column ) {
+            $pagename = explode("{#}", $cf_thepage);
+            echo $pagename[5];
+        }
+        if ( 'cf_openinEditor' == $column ) {
+            $pagename = explode("{#}", $cf_thepage);
+            echo "<a href='https://www.clickfunnels.com/pages/$pagename[1]' target='_blank'>Edit</a>";
+        }
+        
         switch ( $cf_type ) {
         case "p":
             $post_type = "Page";
@@ -135,7 +145,7 @@ class ClickFunnels {
         }
         if ( 'cf_path' == $column ) {
             if ( !empty( $url ) ) {
-                echo " <a href='$url' target='_blank'>$url</a>";
+                echo " <a href='$url' target='_blank'>View Page</a>";
             }
         }
     }
@@ -266,8 +276,11 @@ class ClickFunnels {
         $new_columns = array();
         $new_columns['cb'] = $columns['cb'];
         $new_columns['cf_post_name'] = "Funnel";
+        $new_columns['cf_thepage'] = "Page";
+        
+        $new_columns['cf_path'] = 'View';
+        $new_columns['cf_openinEditor'] = 'Editor';
         $new_columns['cf_type'] = 'Type';
-        $new_columns['cf_path'] = 'URL';
         $new_columns['date'] = $columns['date'];
         return $new_columns;
     }
@@ -384,8 +397,14 @@ class ClickFunnels {
             'search_items' => __( 'Search Click Funnels' ),
             'not_found' => __( 'Nothing found' ),
             'not_found_in_trash' => __( 'Nothing found in Trash' ),
-            'parent_item_colon' => ''
+            'parent_item_colon' => '',
+            'hide_post_row_actions' => array(
+                 'trash'
+                 ,'edit'
+                 ,'quick-edit'
+               )
         );
+
         register_post_type( 'clickfunnels',
             array(
                 'labels' =>  $labels,
@@ -394,12 +413,25 @@ class ClickFunnels {
                 'has_archive' => true,
                 'supports' => array( '' ),
                 'rewrite' => array( 'slug' => 'clickfunnels' ),
+                'hide_post_row_actions' => array( 'trash' ),
                 'register_meta_box_cb' => array( $this, "remove_save_box" )
+               
             )
         );
     }
 }
 add_action( 'admin_menu', 'cf_plugin_submenu' );
+ function wpc_add_admin_cpt_script( $hook ) {
+
+    global $post;
+
+    if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
+        if ( 'clickfunnels' === $post->post_type ) {     
+            wp_enqueue_script(  'myscript', get_stylesheet_directory_uri().'/js/hidedraft.js' );
+        }
+    }
+}
+add_action( 'admin_enqueue_scripts', 'wpc_add_admin_cpt_script', 10, 1 );
 function cf_plugin_submenu() {
     add_submenu_page( 'edit.php?post_type=clickfunnels', __( 'Settings', 'menu-test' ), __( 'Settings', 'menu-test' ), 'manage_options', 'cf_api', 'cf_api_settings_page' );
     add_submenu_page( 'edit.php?post_type=clickfunnels', __( 'How to Use ClickFunnels Plugin', 'menu-test' ), __( 'Support', 'menu-test' ), 'manage_options', 'clickfunnels_support', 'support_clickfunnels' );

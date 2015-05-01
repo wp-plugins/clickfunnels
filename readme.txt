@@ -6,14 +6,14 @@ Author URI: https://profiles.wordpress.org/clickfunnelscom
 Tags: landing pages, clickfunnels, funnels, sales funnel, optin, internet marketing
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 
-Connect your ClickFunnels pages to your Wordpress blog. Create custom pages, set as homepage or 404 page with easy setup.
+Connect your ClickFunnels pages to your WordPress blog. Create custom pages, set as homepage or 404 page with easy setup.
 
 == Description ==
 Connect to your ClickFunnels account to show your funnel pages within your blog without any coding. Create clean URLs to your pages with ease and much more.
 
-First, you install the plugin in your Wordpress dashboard. (check Installation for more info) and connect to ClickFunnels using the *Authentication Key* provided for you. 
+First, you install the plugin in your WordPress dashboard. (check Installation for more info) and connect to ClickFunnels using the *Authentication Key* provided for you. 
 
 You can now connect unlimited pages using custom URLs to truly get the most out of your ClickFunnels account.
 
@@ -28,7 +28,7 @@ Want to show an order page of one of your Webinar funnels? Easy, just select the
 
 Example: "http://yourblog.com/ordernow" can be connected to your order page from any funnel within your ClickFunnels account.
 
-**Don't have a ClickFunnels account?** You can sign up now to transform the way you run your business online. The Wordpress plugin is free to all members.
+**Don't have a ClickFunnels account?** You can sign up now to transform the way you run your business online. The WordPress plugin is free to all members.
 
 **Need more help?** Check out the installation, FAQ and screenshots for more information or check out the Support Desk.
 
@@ -38,7 +38,7 @@ ClickFunnels.com is the premier service for building complete funnels for any ma
 
 The power is in your hands with the **Editor** allows you to design and change your pages in your web browser. Choose from a huge array of templates and edit on the fly.
 
-*Complete with hosting and free Wordpress plugin.*
+*Complete with hosting and free WordPress plugin.*
 
 **Sign up for ClickFunnels Now:**
 <https://clickfunnels.com/>
@@ -46,11 +46,11 @@ The power is in your hands with the **Editor** allows you to design and change y
 
 == Installation ==
 
-**Easy Installation**: In your Wordpress dashboard go to Plugins > Add New and search for "clickfunnels" and you will be able to quickly install the latest version of the plugin.
+**Easy Installation**: In your WordPress dashboard go to Plugins > Add New and search for "clickfunnels" and you will be able to quickly install the latest version of the plugin.
 
 *Updates will be ready automatically and you will be notified in your dashboard.*
 
-**Manual Installation**: Download the ClickFunnels Wordpress plugin .zip file. Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation via a FTP and then activate the Plugin from Plugins page.
+**Manual Installation**: Download the ClickFunnels WordPress plugin .zip file. Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation via a FTP and then activate the Plugin from Plugins page.
 
 **How to Setup Authenication Key**
 
@@ -93,6 +93,13 @@ By re-selecting the page it will ping the server which should refresh your page.
 == Changelog ==
 
 Stay current with the latest version of the plugin:
+
+= Version 1.0.7 =
+
+* Excluded only pages with no template chosen
+* Better page management screen
+* Small copy changes.
+* Now display the chosen Funnel with Page name
 
 = Version 1.0.6 =
 
