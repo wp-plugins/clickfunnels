@@ -3,7 +3,7 @@
     * Plugin Name: ClickFunnels
     * Plugin URI: http://clickfunnels.com
     * Description: Connect your ClickFunnel pages to your blog. Create new pages, connect to homepage or 404 pages.
-    * Version: 1.0.7
+    * Version: 1.0.8
     * Author: Etison, LLC
     * Author URI: http://clickfunnels.com
 */
@@ -122,7 +122,7 @@ class ClickFunnels {
             $pagename = explode("{#}", $cf_thepage);
             echo "<a href='https://www.clickfunnels.com/pages/$pagename[1]' target='_blank'>Edit</a>";
         }
-        
+
         switch ( $cf_type ) {
         case "p":
             $post_type = "Page";
@@ -277,7 +277,7 @@ class ClickFunnels {
         $new_columns['cb'] = $columns['cb'];
         $new_columns['cf_post_name'] = "Funnel";
         $new_columns['cf_thepage'] = "Page";
-        
+
         $new_columns['cf_path'] = 'View';
         $new_columns['cf_openinEditor'] = 'Editor';
         $new_columns['cf_type'] = 'Type';
@@ -415,7 +415,7 @@ class ClickFunnels {
                 'rewrite' => array( 'slug' => 'clickfunnels' ),
                 'hide_post_row_actions' => array( 'trash' ),
                 'register_meta_box_cb' => array( $this, "remove_save_box" )
-               
+
             )
         );
     }
@@ -426,7 +426,7 @@ add_action( 'admin_menu', 'cf_plugin_submenu' );
     global $post;
 
     if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
-        if ( 'clickfunnels' === $post->post_type ) {     
+        if ( 'clickfunnels' === $post->post_type ) {
             wp_enqueue_script(  'myscript', get_stylesheet_directory_uri().'/js/hidedraft.js' );
         }
     }
@@ -453,7 +453,7 @@ $api = new CF_API();
 $click = new ClickFunnels( $api );
 
 function cf_get_file_contents ($url) {
-    if (function_exists('curl_exec')){ 
+    if (function_exists('curl_exec')){
         $conn = curl_init($url);
         curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, true);
         curl_setopt($conn, CURLOPT_FRESH_CONNECT,  true);
@@ -469,4 +469,4 @@ function cf_get_file_contents ($url) {
         $url_get_contents_data = false;
     }
 return $url_get_contents_data;
-} 
+}

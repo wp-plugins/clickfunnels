@@ -6,14 +6,16 @@ Author URI: https://profiles.wordpress.org/clickfunnelscom
 Tags: landing pages, clickfunnels, funnels, sales funnel, optin, internet marketing
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 
 Connect your ClickFunnels pages to your WordPress blog. Create custom pages, set as homepage or 404 page with easy setup.
 
 == Description ==
 Connect to your ClickFunnels account to show your funnel pages within your blog without any coding. Create clean URLs to your pages with ease and much more.
 
-First, you install the plugin in your WordPress dashboard. (check Installation for more info) and connect to ClickFunnels using the *Authentication Key* provided for you. 
+First, you install the plugin in your WordPress dashboard. (check Installation
+for more info) and connect to ClickFunnels using the *Authentication Key*
+provided for you.
 
 You can now connect unlimited pages using custom URLs to truly get the most out of your ClickFunnels account.
 
@@ -24,7 +26,8 @@ You can now connect unlimited pages using custom URLs to truly get the most out 
 * Set any page as 404 page
 * Edit / Manage your pages
 
-Want to show an order page of one of your Webinar funnels? Easy, just select the funnel and choose the order page and create a custom URL. 
+Want to show an order page of one of your Webinar funnels? Easy, just select the
+funnel and choose the order page and create a custom URL.
 
 Example: "http://yourblog.com/ordernow" can be connected to your order page from any funnel within your ClickFunnels account.
 
@@ -54,7 +57,8 @@ The power is in your hands with the **Editor** allows you to design and change y
 
 **How to Setup Authenication Key**
 
-Login to your ClickFunnels account and go to your Settings to get the authentication key, which is unique to your account. 
+Login to your ClickFunnels account and go to your Settings to get the
+authentication key, which is unique to your account.
 
 You will also need the email address you signed up with. From there you can use the email and key to connect the plugin to your account.
 
@@ -93,6 +97,10 @@ By re-selecting the page it will ping the server which should refresh your page.
 == Changelog ==
 
 Stay current with the latest version of the plugin:
+
+= Version 1.0.8 =
+
+* Fixed bug for 'no template selected' causing certain pages not show
 
 = Version 1.0.7 =
 
